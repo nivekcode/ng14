@@ -8,6 +8,8 @@
     "inject-e2e": "apps/inject-e2e",
     "injector-embedded-views": "apps/injector-embedded-views",
     "injector-embedded-views-e2e": "apps/injector-embedded-views-e2e",
+    "lazy-load-standalone": "apps/lazy-load-standalone",
+    "lazy-load-standalone-e2e": "apps/lazy-load-standalone-e2e",
     "route-provider": "apps/route-provider",
     "route-provider-e2e": "apps/route-provider-e2e",
     "router-title": "apps/router-title",

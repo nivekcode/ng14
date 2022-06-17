@@ -12,6 +12,7 @@
     "start:env-initializer": "nx serve --project env-initializer",
     "start:typed-forms": "nx serve --project typed-forms",
     "start:injector-embedded-views": "nx serve --project injector-embedded-views",
+    "start:lazy-load-standalone": "nx serve --project lazy-load-standalone",
     "build": "nx build",
     "test": "nx test"
   },
