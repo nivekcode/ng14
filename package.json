@@ -10,6 +10,7 @@
     "start:routing": "nx serve --project router-title",
     "start:route-provider": "nx serve --project route-provider",
     "start:env-initializer": "nx serve --project env-initializer",
+    "start:typed-forms": "nx serve --project typed-forms",
     "build": "nx build",
     "test": "nx test"
   },

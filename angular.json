@@ -11,6 +11,8 @@
     "router-title": "apps/router-title",
     "router-title-e2e": "apps/router-title-e2e",
     "standalone-components": "apps/standalone-components",
-    "standalone-components-e2e": "apps/standalone-components-e2e"
+    "standalone-components-e2e": "apps/standalone-components-e2e",
+    "typed-forms": "apps/typed-forms",
+    "typed-forms-e2e": "apps/typed-forms-e2e"
   }
 }
