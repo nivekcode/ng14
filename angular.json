@@ -2,6 +2,8 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "inject": "apps/inject",
+    "inject-e2e": "apps/inject-e2e",
     "standalone-components": "apps/standalone-components",
     "standalone-components-e2e": "apps/standalone-components-e2e"
   }

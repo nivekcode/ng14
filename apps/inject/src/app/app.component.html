@@ -1,0 +1,16 @@
+<h1>Subscription handling</h1>
+
+<subscription-handling *ngIf="render"></subscription-handling>
+
+<button (click)="render = !render">
+  {{
+  render
+    ? 'Tear down subscription handling component'
+    : 'Render subscription handling component'
+  }}
+</button>
+
+<h1>Todos</h1>
+<pre>
+  {{ todos$ | async | json }}
+</pre>
