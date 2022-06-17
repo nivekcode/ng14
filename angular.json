@@ -4,6 +4,8 @@
   "projects": {
     "inject": "apps/inject",
     "inject-e2e": "apps/inject-e2e",
+    "router-title": "apps/router-title",
+    "router-title-e2e": "apps/router-title-e2e",
     "standalone-components": "apps/standalone-components",
     "standalone-components-e2e": "apps/standalone-components-e2e"
   }
