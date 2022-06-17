@@ -8,6 +8,7 @@
     "start:standalone": "nx serve --project standalone-components",
     "start:inject": "nx serve --project inject",
     "start:routing": "nx serve --project router-title",
+    "start:route-provider": "nx serve --project route-provider",
     "build": "nx build",
     "test": "nx test"
   },
