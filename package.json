@@ -11,6 +11,7 @@
     "start:route-provider": "nx serve --project route-provider",
     "start:env-initializer": "nx serve --project env-initializer",
     "start:typed-forms": "nx serve --project typed-forms",
+    "start:injector-embedded-views": "nx serve --project injector-embedded-views",
     "build": "nx build",
     "test": "nx test"
   },

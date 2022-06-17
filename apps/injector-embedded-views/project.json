@@ -1,0 +1,93 @@
+{
+  "projectType": "application",
+  "sourceRoot": "apps/injector-embedded-views/src",
+  "prefix": "ng14",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/injector-embedded-views",
+        "index": "apps/injector-embedded-views/src/index.html",
+        "main": "apps/injector-embedded-views/src/main.ts",
+        "polyfills": "apps/injector-embedded-views/src/polyfills.ts",
+        "tsConfig": "apps/injector-embedded-views/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/injector-embedded-views/src/favicon.ico",
+          "apps/injector-embedded-views/src/assets"
+        ],
+        "styles": ["apps/injector-embedded-views/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/injector-embedded-views/src/environments/environment.ts",
+              "with": "apps/injector-embedded-views/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "injector-embedded-views:build:production"
+        },
+        "development": {
+          "browserTarget": "injector-embedded-views:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "injector-embedded-views:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/injector-embedded-views/**/*.ts",
+          "apps/injector-embedded-views/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/injector-embedded-views"],
+      "options": {
+        "jestConfig": "apps/injector-embedded-views/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
