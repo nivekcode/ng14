@@ -2,6 +2,8 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "env-initializer": "apps/env-initializer",
+    "env-initializer-e2e": "apps/env-initializer-e2e",
     "inject": "apps/inject",
     "inject-e2e": "apps/inject-e2e",
     "route-provider": "apps/route-provider",
