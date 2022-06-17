@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "standalone-components": "apps/standalone-components",
+    "standalone-components-e2e": "apps/standalone-components-e2e"
+  }
+}
